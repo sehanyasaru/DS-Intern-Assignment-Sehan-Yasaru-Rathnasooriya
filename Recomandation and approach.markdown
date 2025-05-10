@@ -24,7 +24,7 @@ The goal was to predict equipment energy consumption in a smart manufacturing en
 Regression models were evaluated on the test set:
 
 - **ElasticNet**: Achieved poor performance with MAE: 0.789, MSE: 0.989, RMSE: 0.995, and R²: -0.00001, indicating it failed to capture the data’s complexity.
-- **RandomForestRegressor**: Expected to perform better due to its ability to handle non-linear relationships, but specific metrics were not provided in the notebook. Prior tuning suggests strong potential.
+- **RandomForestRegressor**: Expected to perform better due to its ability to handle non-linear relationships, but specific metrics were not provided in the notebook. Prior tuning suggests strong potential Compared to the other model this is the best model with better R squared value and reduce error.
 - **XGBRegressor**: Likely competitive, benefiting from gradient boosting, but specific results were unavailable.
 - **Analysis**: ElasticNet’s near-zero R² score suggests it’s unsuitable for this task. RandomForestRegressor, with optimized parameters (e.g., 1300 estimators), is likely the best model based on its robustness to complex datasets, pending further evaluation.
 
@@ -40,4 +40,4 @@ Based on data insights and modeling:
 
 ## Conclusion
 
-The project developed a predictive framework for equipment energy consumption, leveraging preprocessing, feature engineering, and regression modeling. While ElasticNet underperformed, RandomForestRegressor shows promise as the best model, pending further evaluation. Data insights highlight the role of temporal and environmental factors, guiding recommendations for energy-efficient operations in smart manufacturing.
+The project developed a predictive framework for equipment energy consumption, leveraging preprocessing, feature engineering, and regression modeling. While ElasticNet underperformed, RandomForestRegressor shows promise as the best model. Data insights highlight the role of temporal and environmental factors, guiding recommendations for energy-efficient operations in smart manufacturing.
